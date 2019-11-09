@@ -25,15 +25,15 @@ void loop()
   int sound_2 = analogRead(soundpin);
   int finaldb = sound_2 - sound_1;
   Serial.println(sound_1);
-  if (finaldb > 1) {
+  if (finaldb > 2) {
     digitalWrite(l1, HIGH);
-    if (finaldb >= 2) {
+    if (finaldb >= 4) {
       digitalWrite(l2, HIGH);
-      if (finaldb >= 3) {
+      if (finaldb >= 6) {
         digitalWrite(l3, HIGH);
-        if (finaldb >= 4) {
+        if (finaldb >= 8) {
           digitalWrite(l4, HIGH);
-          if (finaldb >= 5) {
+          if (finaldb >= 9) {
             digitalWrite(l5, HIGH);
           }
         }
